@@ -1,6 +1,7 @@
 package net.nicolas.tutorialmod.item;
 
 import net.minecraft.world.item.Item;
+import net.minecraft.world.item.ItemStack;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredItem;
 import net.neoforged.neoforge.registries.DeferredRegister;
@@ -13,6 +14,7 @@ public class ModItems {
             () -> new Item(new Item.Properties()));
     public static final DeferredItem<Item> RAW_BISMUTH = ITEMS.register("raw_bismuth",
             ()-> new Item(new Item.Properties()));
+
 
 
     public static void register(IEventBus eventBus) {
