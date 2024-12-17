@@ -1,4 +1,4 @@
-package net.nicolas.tutorialmod.block;
+package net.nicolas.futuremod.block;
 
 import net.minecraft.util.valueproviders.UniformInt;
 import net.minecraft.world.item.BlockItem;
@@ -10,14 +10,14 @@ import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredBlock;
 import net.neoforged.neoforge.registries.DeferredRegister;
-import net.nicolas.tutorialmod.TutorialMod;
-import net.nicolas.tutorialmod.item.ModItems;
+import net.nicolas.futuremod.FutureMod;
+import net.nicolas.futuremod.item.ModItems;
 
 import java.util.function.Supplier;
 
 public class ModBlocks {
     public static final DeferredRegister.Blocks Blocks =
-            DeferredRegister.createBlocks(TutorialMod.MOD_ID);
+            DeferredRegister.createBlocks(FutureMod.MOD_ID);
 
     public static final DeferredBlock<Block> BISMUTH_BLOCK = registerBlock("bismuth_block",
             () -> new Block(BlockBehaviour.Properties.of()

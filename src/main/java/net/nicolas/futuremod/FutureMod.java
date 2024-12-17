@@ -1,9 +1,9 @@
-package net.nicolas.tutorialmod;
+package net.nicolas.futuremod;
 
 import net.minecraft.world.item.CreativeModeTabs;
-import net.nicolas.tutorialmod.block.ModBlocks;
-import net.nicolas.tutorialmod.item.ModCreativeModeTabs;
-import net.nicolas.tutorialmod.item.ModItems;
+import net.nicolas.futuremod.block.ModBlocks;
+import net.nicolas.futuremod.item.ModCreativeModeTabs;
+import net.nicolas.futuremod.item.ModItems;
 import org.slf4j.Logger;
 
 import com.mojang.logging.LogUtils;
@@ -22,14 +22,14 @@ import net.neoforged.neoforge.event.BuildCreativeModeTabContentsEvent;
 import net.neoforged.neoforge.event.server.ServerStartingEvent;
 
 // The value here should match an entry in the META-INF/neoforge.mods.toml file
-@Mod(TutorialMod.MOD_ID)
-public class TutorialMod {
-    public static final String MOD_ID = "tutorialmod";
+@Mod(FutureMod.MOD_ID)
+public class FutureMod {
+    public static final String MOD_ID = "tkfuturemod";
     private static final Logger LOGGER = LogUtils.getLogger();
 
     // The constructor for the mod class is the first code that is run when your mod is loaded.
     // FML will recognize some parameter types like IEventBus or ModContainer and pass them in automatically.
-    public TutorialMod(IEventBus modEventBus, ModContainer modContainer) {
+    public FutureMod(IEventBus modEventBus, ModContainer modContainer) {
         // Register the commonSetup method for modloading
         modEventBus.addListener(this::commonSetup);
 
