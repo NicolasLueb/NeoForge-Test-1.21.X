@@ -1,7 +1,7 @@
 {
   "variants": {
     "": {
-      "model": "tutorialmod:block/bismuth_ore"
+      "model": "tkfuturemod:block/bismuth_ore"
     }
   }
 }

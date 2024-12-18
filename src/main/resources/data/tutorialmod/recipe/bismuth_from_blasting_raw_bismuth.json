@@ -5,10 +5,10 @@
   "experience": 0.25,
   "group": "bismuth",
   "ingredient": {
-    "item": "tutorialmod:raw_bismuth"
+    "item": "tkfuturemod:raw_bismuth"
   },
   "result": {
     "count": 1,
-    "id": "tutorialmod:bismuth"
+    "id": "tkfuturemod:bismuth"
   }
 }

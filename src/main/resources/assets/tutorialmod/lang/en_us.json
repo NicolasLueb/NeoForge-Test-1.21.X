@@ -1,11 +1,11 @@
 {
-  "item.tutorialmod.bismuth": "Bismuth",
-  "item.tutorialmod.raw_bismuth": "Raw Bismuth",
+  "item.tkfuturemod.bismuth": "Bismuth",
+  "item.tkfuturemod.raw_bismuth": "Raw Bismuth",
 
-  "block.tutorialmod.bismuth_block": "Block of Bismuth",
-  "block.tutorialmod.bismuth_ore": "Bismuth Ore",
-  "block.tutorialmod.bismuth_deepslate_ore": "Bismuth Deepslate Ore",
+  "block.tkfuturemod.bismuth_block": "Block of Bismuth",
+  "block.tkfuturemod.bismuth_ore": "Bismuth Ore",
+  "block.tkfuturemod.bismuth_deepslate_ore": "Bismuth Deepslate Ore",
 
-  "creativetab.tutroialmod.bismuth_items": "Bismuth Items",
-  "creativetab.tutroialmod.bismuth_blocks": "Bismuth Blocks"
+  "creativetab.tkfuturemod.bismuth_items": "Bismuth Items",
+  "creativetab.tkfuturemod.bismuth_blocks": "Bismuth Blocks"
 }

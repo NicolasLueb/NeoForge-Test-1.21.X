@@ -3,7 +3,7 @@
   "category": "misc",
   "key": {
     "B": {
-      "item": "tutorialmod:bismuth"
+      "item": "tkfuturemod:bismuth"
     }
   },
   "pattern": [
@@ -13,6 +13,6 @@
   ],
   "result": {
     "count": 1,
-    "id": "tutorialmod:bismuth_block"
+    "id": "tkfuturemod:bismuth_block"
   }
 }

@@ -11,11 +11,11 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "tutorialmod:bismuth_block"
+          "name": "tkfuturemod:bismuth_block"
         }
       ],
       "rolls": 1.0
     }
   ],
-  "random_sequence": "tutorialmod:blocks/bismuth_block"
+  "random_sequence": "tkfuturemod:blocks/bismuth_block"
 }
