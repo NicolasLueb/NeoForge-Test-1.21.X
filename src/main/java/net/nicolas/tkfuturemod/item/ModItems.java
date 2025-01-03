@@ -1,10 +1,10 @@
-package net.nicolas.futuremod.item;
+package net.nicolas.tkfuturemod.item;
 
 import net.minecraft.world.item.Item;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredItem;
 import net.neoforged.neoforge.registries.DeferredRegister;
-import net.nicolas.futuremod.FutureMod;
+import net.nicolas.tkfuturemod.FutureMod;
 
 public class ModItems {
     public static final DeferredRegister.Items ITEMS = DeferredRegister.createItems(FutureMod.MOD_ID);

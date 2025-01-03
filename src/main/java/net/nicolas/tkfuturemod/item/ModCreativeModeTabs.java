@@ -1,4 +1,4 @@
-package net.nicolas.futuremod.item;
+package net.nicolas.tkfuturemod.item;
 
 import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
@@ -7,8 +7,8 @@ import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.ItemStack;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredRegister;
-import net.nicolas.futuremod.FutureMod;
-import net.nicolas.futuremod.block.ModBlocks;
+import net.nicolas.tkfuturemod.FutureMod;
+import net.nicolas.tkfuturemod.block.ModBlocks;
 
 import java.util.function.Supplier;
 

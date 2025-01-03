@@ -1,9 +1,9 @@
-package net.nicolas.futuremod;
+package net.nicolas.tkfuturemod;
 
 import net.minecraft.world.item.CreativeModeTabs;
-import net.nicolas.futuremod.block.ModBlocks;
-import net.nicolas.futuremod.item.ModCreativeModeTabs;
-import net.nicolas.futuremod.item.ModItems;
+import net.nicolas.tkfuturemod.block.ModBlocks;
+import net.nicolas.tkfuturemod.item.ModCreativeModeTabs;
+import net.nicolas.tkfuturemod.item.ModItems;
 import org.slf4j.Logger;
 
 import com.mojang.logging.LogUtils;

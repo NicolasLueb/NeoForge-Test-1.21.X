@@ -1,4 +1,4 @@
-package net.nicolas.futuremod;
+package net.nicolas.tkfuturemod;
 
 import java.util.List;
 import java.util.Set;

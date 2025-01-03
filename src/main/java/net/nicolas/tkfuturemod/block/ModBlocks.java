@@ -1,4 +1,4 @@
-package net.nicolas.futuremod.block;
+package net.nicolas.tkfuturemod.block;
 
 import net.minecraft.util.valueproviders.UniformInt;
 import net.minecraft.world.item.BlockItem;
@@ -10,8 +10,8 @@ import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredBlock;
 import net.neoforged.neoforge.registries.DeferredRegister;
-import net.nicolas.futuremod.FutureMod;
-import net.nicolas.futuremod.item.ModItems;
+import net.nicolas.tkfuturemod.FutureMod;
+import net.nicolas.tkfuturemod.item.ModItems;
 
 import java.util.function.Supplier;
 
