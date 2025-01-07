@@ -11,6 +11,7 @@ import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredBlock;
 import net.neoforged.neoforge.registries.DeferredRegister;
 import net.nicolas.tkfuturemod.FutureMod;
+import net.nicolas.tkfuturemod.block.custom.PhotonGenerator;
 import net.nicolas.tkfuturemod.item.ModItems;
 
 import java.util.function.Supplier;
@@ -30,6 +31,9 @@ public class ModBlocks {
     public static final DeferredBlock<Block>BISMUTH_DEEPSLATE_ORE= registerBlock("bismuth_deepslate_ore",
             () -> new DropExperienceBlock(UniformInt.of(3, 6),
                     BlockBehaviour.Properties.of().strength(4f).requiresCorrectToolForDrops().sound(SoundType.DEEPSLATE)));
+
+    public static final DeferredBlock<Block> PHOTON_GENERATOR = registerBlock("photon_generator",
+            () -> new PhotonGenerator());
 
 
     private static <T extends Block> DeferredBlock<T> registerBlock(String name, Supplier<T> block) {

@@ -1,10 +1,12 @@
 {
   "item.tkfuturemod.bismuth": "Bismuth",
   "item.tkfuturemod.raw_bismuth": "Raw Bismuth",
+  "item.tkfuturemod.photon_item": "Photon",
 
   "block.tkfuturemod.bismuth_block": "Block of Bismuth",
   "block.tkfuturemod.bismuth_ore": "Bismuth Ore",
   "block.tkfuturemod.bismuth_deepslate_ore": "Bismuth Deepslate Ore",
+  "block.tkfuturemod.photon_generator": "Photon Generator",
 
   "creativetab.tkfuturemod.bismuth_items": "Bismuth Items",
   "creativetab.tkfuturemod.bismuth_blocks": "Bismuth Blocks"
