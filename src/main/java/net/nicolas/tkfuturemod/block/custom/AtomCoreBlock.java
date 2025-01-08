@@ -24,7 +24,7 @@ public class AtomCoreBlock extends Block {
     public void exciteAtom(Level level, BlockPos pos) {
         if (!level.isClientSide) {
             this.isExcited = true; // The atom is now excited
-            System.out.println("Atom excited at: " + pos);// Debugging: Log when the atom is excited
+            System.out.println("Atom excited at: " + pos); // Debugging: Log when the atom is excited
             level.scheduleTick(pos, this, 100);  // Set a delay before relaxation (excited state duration)
             System.out.println("Excited atom scheduled to relax at: " + pos);  // Debugging: Log when the tick is scheduled
         }
@@ -43,11 +43,14 @@ public class AtomCoreBlock extends Block {
     }
 
     private void releasePhoton(Level level, BlockPos pos) {
-        // Create a photon item and drop it in the world at the atom's position
+        // Calculate the position to drop the photon at the bottom of the block
+        BlockPos bottomPos = pos.below(); // Get the block position below (bottom of the block)
+
+        // Create a photon item and drop it in the world at the bottom of the atom core block
         ItemStack photonItem = new ItemStack(ModItems.PHOTON_ITEM.get());
-        Block.popResource(level, pos, photonItem);
+        Block.popResource(level, bottomPos, photonItem);
 
         // Debugging output
-        System.out.println("Photon released at: " + pos);  // Debugging: Log when a photon is released
+        System.out.println("Photon released at: " + bottomPos);  // Debugging: Log when a photon is released
     }
 }

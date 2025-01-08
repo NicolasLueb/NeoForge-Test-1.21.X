@@ -1,0 +1,8 @@
+// 1.21.1	2025-01-07T19:41:10.6937677	Loot Tables
+a674cabbbed124e5faeb695020242c50a6ece97c data/tkfuturemod/loot_table/blocks/atom_core_block.json
+bb3b8cef1bdabedcbefa8c52a7cc00c0f1610f99 data/tkfuturemod/loot_table/blocks/bismuth_block.json
+a8239e8cfbd4cdab468f7e4e1aff4070383a668e data/tkfuturemod/loot_table/blocks/bismuth_deepslate_ore.json
+199305739b94340d73605d7dc7eac3485abe683d data/tkfuturemod/loot_table/blocks/bismuth_ore.json
+bbcf2c77ce403e6da7b1cb9172334c58ead607c3 data/tkfuturemod/loot_table/blocks/electron_exciter_block.json
+9452f38aa18009493f0f68cbcd875fec82fbbfe6 data/tkfuturemod/loot_table/blocks/photon_collector_block.json
+569360647314ea3f4db6c3e011788cee7de12a8f data/tkfuturemod/loot_table/blocks/photon_generator.json

@@ -11,6 +11,8 @@ import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.util.RandomSource;
 import net.minecraft.world.phys.AABB;
 import net.nicolas.tkfuturemod.item.ModItems;
+import net.nicolas.tkfuturemod.util.ModTags;
+import net.minecraft.world.entity.Entity;
 
 public class PhotonCollectorBlock extends Block {
 
@@ -21,30 +23,33 @@ public class PhotonCollectorBlock extends Block {
     }
 
     @Override
-    public void tick(BlockState state, ServerLevel level, BlockPos pos, RandomSource random) {
-        super.tick(state, level, pos, random);
+    public void onPlace(BlockState state, Level level, BlockPos pos, BlockState oldState, boolean isMoving) {
+        super.onPlace(state, level, pos, oldState, isMoving);
+        level.scheduleTick(pos, this, 20);// Schedule tick every 20 ticks
+        System.out.println("First Tick at: " + pos);
+    }
 
-        // Debugging: Log when the tick occurs
-        System.out.println("Photon Collector ticked at: " + pos);
+    @Override
+    public void stepOn(Level level, BlockPos pos, BlockState state, Entity entity) {
+        if(entity instanceof ItemEntity itemEntity) {
 
-        // Look for ItemEntities in a 3x3 area above the collector
-        AABB collectionArea = new AABB(pos.getX() - 1, pos.getY() + 1, pos.getZ() - 1, pos.getX() + 1, pos.getY() + 2, pos.getZ() + 1);
-
-        // Get ItemEntities in the bounding box
-        level.getEntitiesOfClass(ItemEntity.class, collectionArea, entity -> true)
-                .forEach(itemEntity -> {
-                    // Debugging: Log each item being checked
-                    System.out.println("Checking item: " + itemEntity.getItem().getItem());
+        System.out.println("Photon Triggered: " + pos);
 
                     // Check if the item is a photon item
-                    if (itemEntity.getItem().getItem() == ModItems.PHOTON_ITEM.get()) {
+            if (isValidItem(itemEntity.getItem())) {
                         // Collect the photon (remove it from the world)
-                        itemEntity.discard();  // Remove the item from the world
+                itemEntity.discard();  // Remove the item from the world
 
-                        // Debugging: Log when a photon is collected
                         System.out.println("Photon collected at: " + pos);
                         // Handle photon collection (e.g., increase a stored photon count or convert to energy)
                     }
-                });
+                };
+        super.stepOn(level, pos, state, entity);
+    }
+
+    private boolean isValidItem(ItemStack item) {
+        boolean isValid = item.is(ModTags.Items.ACCEPTED_ITEMS);
+        System.out.println("Item is valid: " + isValid);  // Log result
+        return isValid;
     }
 }
