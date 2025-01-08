@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "normal": {
+      "model": "tkfuturemod:block/electron_exciter_block"
+    }
+  }
+}

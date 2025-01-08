@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "normal": {
+      "model": "tkfuturemod:block/photon_collector_block"
+    }
+  }
+}

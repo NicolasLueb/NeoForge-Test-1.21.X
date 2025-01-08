@@ -7,7 +7,10 @@
   "block.tkfuturemod.bismuth_ore": "Bismuth Ore",
   "block.tkfuturemod.bismuth_deepslate_ore": "Bismuth Deepslate Ore",
   "block.tkfuturemod.photon_generator": "Photon Generator",
+  "block.tkfuturemod.atom_core_block": "Atom Core",
+  "block.tkfuturemod.electron_exciter_block": "Electron Exciter",
+  "block.tkfuturemod.photon_collector_block": "Photon Collector",
 
-  "creativetab.tkfuturemod.bismuth_items": "Bismuth Items",
-  "creativetab.tkfuturemod.bismuth_blocks": "Bismuth Blocks"
+  "creativetab.tkfuturemod.bismuth_items": "Future Items",
+  "creativetab.tkfuturemod.bismuth_blocks": "Future Blocks"
 }

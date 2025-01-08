@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "normal": {
+      "model": "tkfuturemod:block/atom_core_block"
+    }
+  }
+}

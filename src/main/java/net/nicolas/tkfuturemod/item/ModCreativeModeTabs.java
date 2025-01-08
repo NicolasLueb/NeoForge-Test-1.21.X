@@ -35,6 +35,9 @@ public class ModCreativeModeTabs {
                         output.accept(ModBlocks.BISMUTH_ORE);
                         output.accept(ModBlocks.BISMUTH_DEEPSLATE_ORE);
                         output.accept(ModBlocks.PHOTON_GENERATOR);
+                        output.accept(ModBlocks.ATOM_CORE_BLOCK);
+                        output.accept(ModBlocks.ELECTRON_EXCITER_BLOCK);
+                        output.accept(ModBlocks.PHOTON_COLLECTOR_BLOCK);
 
 
                     }).build());

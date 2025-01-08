@@ -11,9 +11,13 @@ import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredBlock;
 import net.neoforged.neoforge.registries.DeferredRegister;
 import net.nicolas.tkfuturemod.FutureMod;
+import net.nicolas.tkfuturemod.block.custom.AtomCoreBlock;
+import net.nicolas.tkfuturemod.block.custom.ElectronExciterBlock;
+import net.nicolas.tkfuturemod.block.custom.PhotonCollectorBlock;
 import net.nicolas.tkfuturemod.block.custom.PhotonGenerator;
 import net.nicolas.tkfuturemod.item.ModItems;
 
+import java.util.Locale;
 import java.util.function.Supplier;
 
 public class ModBlocks {
@@ -32,8 +36,17 @@ public class ModBlocks {
             () -> new DropExperienceBlock(UniformInt.of(3, 6),
                     BlockBehaviour.Properties.of().strength(4f).requiresCorrectToolForDrops().sound(SoundType.DEEPSLATE)));
 
-    public static final DeferredBlock<Block> PHOTON_GENERATOR = registerBlock("photon_generator",
+    public static final DeferredBlock<Block>PHOTON_GENERATOR = registerBlock("photon_generator",
             () -> new PhotonGenerator());
+
+    public static  final  DeferredBlock<Block>ATOM_CORE_BLOCK = registerBlock("atom_core_block",
+            () -> new AtomCoreBlock());
+
+    public static final DeferredBlock<Block>ELECTRON_EXCITER_BLOCK = registerBlock("electron_exciter_block",
+            () -> new ElectronExciterBlock());
+
+    public static final DeferredBlock<Block>PHOTON_COLLECTOR_BLOCK = registerBlock("photon_collector_block",
+            () -> new PhotonCollectorBlock());
 
 
     private static <T extends Block> DeferredBlock<T> registerBlock(String name, Supplier<T> block) {
