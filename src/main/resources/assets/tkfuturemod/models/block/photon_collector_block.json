@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:block/cube_all",
   "textures": {
-    "all": "tkfuturemod:block/photon_collector"
+    "all": "tkfuturemod:block/photon_collector_block"
   }
 }

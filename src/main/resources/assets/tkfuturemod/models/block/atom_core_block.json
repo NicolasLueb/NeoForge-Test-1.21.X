@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:block/cube_all",
   "textures": {
-    "all": "tkfuturemod:block/atom_core"
+    "all": "tkfuturemod:block/atom_core_block"
   }
 }
