@@ -2,6 +2,7 @@ package net.nicolas.tkfuturemod;
 
 import net.minecraft.world.item.CreativeModeTabs;
 import net.nicolas.tkfuturemod.block.ModBlocks;
+import net.nicolas.tkfuturemod.block.ModBlockEntities;
 import net.nicolas.tkfuturemod.item.ModCreativeModeTabs;
 import net.nicolas.tkfuturemod.item.ModItems;
 import org.slf4j.Logger;
@@ -44,6 +45,9 @@ public class FutureMod {
 
         ModItems.register(modEventBus);
         ModBlocks.register(modEventBus);
+
+        // *** Register Block Entities ***
+        ModBlockEntities.register(modEventBus);
 
         // Register the item to a creative tab
         modEventBus.addListener(this::addCreative);
